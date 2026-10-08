@@ -5,7 +5,7 @@ import google.generativeai as genai
 # 1. 初始化配置与 API
 API_KEY = os.environ.get("GEMINI_API_KEY")
 genai.configure(api_key=API_KEY)
-model = genai.GenerativeModel('gemini-2.5-flash')
+model = genai.GenerativeModel('gemini-3.8-flash')
 
 # 2. 动态计算学习进度与话题
 START_DATE = datetime.date(2026, 10, 6) # 设置你的学习起始日
